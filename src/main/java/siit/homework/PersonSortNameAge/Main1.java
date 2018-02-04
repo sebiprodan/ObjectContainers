@@ -3,7 +3,7 @@ package siit.homework.PersonSortNameAge;
 import java.util.*;
 
 
-public class App {
+public class Main1 {
 
     public static void main(String[] args) {
         // create the TreeSet object container and pass the Comparator implementation through the TreeSet Constructor
