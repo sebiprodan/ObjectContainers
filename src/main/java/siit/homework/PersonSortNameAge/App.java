@@ -1,4 +1,4 @@
-package siit.homework;
+package siit.homework.PersonSortNameAge;
 
 import java.util.*;
 
@@ -6,9 +6,11 @@ import java.util.*;
 public class App {
 
     public static void main(String[] args) {
+        // create the TreeSet object container and pass the Comparator implementation through the TreeSet Constructor
+        Set <Person> personTreeSet1 = new TreeSet<Person>(new AgeComparator());
 
-        Collection <Person> personTreeSet1 = new TreeSet<Person>(new AgeComparator());
-
+        System.out.println("Set sort by age");
+        System.out.println("***************");
 
         personTreeSet1.add(new Person("Sebastian", 18));
         personTreeSet1.add(new Person("Ade", 31));
@@ -18,10 +20,12 @@ public class App {
         for (Person set1 : personTreeSet1){
             System.out.println(set1);
         }
+        System.out.println();
+        System.out.println("Set sort by name");
+        System.out.println("***************");
 
-        System.out.println("**************************************************************");
-
-        Collection <Person> personTreeSet2 = new TreeSet<Person>(new NameComparator());
+        // create the TreeSet object container and pass the Comparator implementation through the TreeSet Constructor
+        Set <Person> personTreeSet2 = new TreeSet<Person>(new NameComparator());
 
         personTreeSet2.add(new Person("Sebastian", 18));
         personTreeSet2.add(new Person("Ade", 31));
