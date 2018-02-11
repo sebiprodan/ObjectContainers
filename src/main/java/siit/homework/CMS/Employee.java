@@ -20,9 +20,5 @@ public class Employee {
         return "Name: " + this.name + "|Role: " + this.role + "|Seniority: " +this.seniority;
     }
 
-    public void noParking(){
-        if (parking = false){
 
-        }
-    }
 }
