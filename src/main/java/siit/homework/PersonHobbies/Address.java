@@ -1,15 +1,18 @@
 package siit.homework.PersonHobbies;
+import java.util.*;
 
-public class Address {
+public class Address{
 
-    String location;
+    String addressName;
+    String townName;
 
-    public Address (String location){
-        this.location = location;
+    public Address (String addressName, String townName){
+        this.addressName = addressName;
+        this.townName = townName;
     }
 
     @Override
     public String toString() {
-        return this.location;
+        return this.addressName + "/" + this.townName;
     }
 }
